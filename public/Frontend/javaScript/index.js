@@ -1,6 +1,5 @@
-const { default: url } = require("../hostname");
+import url  from "../hostname.js");
 
-url
 
 const socket = io(url, { withCredentials: true });
 let currentChatUser = null;
