@@ -18,7 +18,7 @@ fetch(`${url}/me`, { credentials: "include" })
   })
   .catch((err) => {
     console.error("Error:", err);
-    window.location.href = "${url}/login";
+    window.location.href = "/login";
   });
 
 // ✅ All Logger fetch
