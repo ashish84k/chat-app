@@ -1,4 +1,4 @@
-import url  from "../hostname.js");
+import url  from "../hostname.js";
 
 
 const socket = io(url, { withCredentials: true });
