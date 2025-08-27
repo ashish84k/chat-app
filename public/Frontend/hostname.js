@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000'
+const url = 'https://chat-app-ashish84k.onrender.com/'
 
 
 export default url;
