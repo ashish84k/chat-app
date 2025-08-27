@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "Ashish Patel",
+        "email": "ashishshen20@gmail.com",
+        "phone": "7525847163",
+        "address": "123 Main St, Anytown, USA",
+        "username": "ashishpatel",
+        "password": "password123",
+        "age": 30,
+        "img": "https://i.pinimg.com/736x/3d/02/4a/3d024a29b20cd68860b61f46597b704b.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ankit Patel",
+        "email": "ankit.patel@gmail.com",
+        "phone": "456-789-0123",
+        "address": "456 Elm St, Othertown, USA",
+        "username": "ankitpatel",
+        "password": "password456",
+        "age": 25,
+        "img": "https://i.pravatar.cc/44?img=5"
+    }
+]
