@@ -347,7 +347,7 @@ function currentChat(chatter) {
   // Suppose aapke paas clicked user ka object hai
   const partnerId = currentChatUser._id;
   // Fetch messages from backend
-  fetch(`http://localhost:3000/messages/${partnerId}`, {
+  fetch(`${url}/messages/${partnerId}`, {
     method: "GET",
     credentials: "include",
   })
