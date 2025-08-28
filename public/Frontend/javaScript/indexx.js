@@ -301,10 +301,10 @@ async function fetchCurrentUser() {
   );
 
   // Fixed: Initialize animations only after DOM is ready
-  document.addEventListener("DOMContentLoaded", () => {
+  // document.addEventListener("DOMContentLoaded", () => {
     animateSendBtn();
     initializeChatEventListeners();
-  });
+  // });
 
   // ✅ Event listeners for chat
   function initializeChatEventListeners() {
