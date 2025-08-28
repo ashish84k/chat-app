@@ -7,7 +7,6 @@ const userSchema = new mongoose.Schema(
     email: {
       type: String,
       unique: true,
-      sparse: true, // allow null/multiple empty
       lowercase: true,
       match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
       default: `${Date.now().toLocaleString()}@gmail.com`,
