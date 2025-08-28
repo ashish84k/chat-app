@@ -7,6 +7,7 @@ const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const { Server } = require("socket.io");
 
+const profileRouter = require("./routers/profile");
 const connectDB = require("./Database/connectDB");
 const authRouter = require("./routers/auth");
 const usersRouter = require("./routers/users");
@@ -28,11 +29,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public", "Frontend")));
-
+app.use(express.static(path.join(__dirname, "public")));
 // Routes
 app.use(authRouter);
 app.use(usersRouter);
 app.use(massageRouter);
+app.use(profileRouter);
 
 // Serve frontend
 app.get("/", (req, res) =>

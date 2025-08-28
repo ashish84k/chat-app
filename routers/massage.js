@@ -1,9 +1,10 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const Chats = require("../models/chatmodel");
+const authenticate = require("../Middleware/authenticate");
 const massageRouter = express.Router();
 
-massageRouter.get("/messages/:partnerId", async (req, res) => {
+massageRouter.get("/messages/:partnerId", authenticate, async (req, res) => {
     const partnerId = req.params.partnerId;
     const token = req.cookies.token;
 
